@@ -6,7 +6,7 @@ for i in range(len(x)):
 #%% in list
 usuarios = [('andre',24,1995),
             ('joao',25,1994)]
-for nome,idade,ano in usuarios
+for nome,idade,ano in usuarios:
     print(f'{nome},{idade},{ano}')
 
 #%% posso desempacotar apenas um cara da tupla
