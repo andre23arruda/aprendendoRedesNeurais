@@ -21,3 +21,10 @@ class ContaSalario:
 
     def __str__(self):
         return f'>> Codigo: {self._codigo} \n>> Saldo {self._saldo}'
+
+#%%
+conta_do_andre = ContaSalario(1)
+conta_do_andre.deposit(100)
+conta_do_joao = ContaSalario(2)
+conta_do_joao.deposit(200)
+conta_do_joao >= conta_do_andre
