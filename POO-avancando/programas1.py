@@ -1,5 +1,5 @@
 #%% Criando classes
-class Filme(Programa): # classe filha
+class Filme(): # classe filha
     def __init__(self, nome, ano, duracao):
         self.__nome = nome.title()
         self.__ano = ano

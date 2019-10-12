@@ -34,38 +34,13 @@ class Serie(Programa): # classe filha
     def __str__(self):
         return f'{self._nome} - {self._ano} - {self.temporadas} temporadas - {self._likes}'
 
-class Playlist:
+class Playlist(list): # playlist recebe as caracteristicas de list como herança
     def __init__(self, nome, programas):
         self.nome = nome
-        self.programas = programas
+        super().__init__(programas) # inicia como uma lista
     
-    def tamanho(self):
-        return len(self.programas)
-#%% Criando objetos
-f1 = Filme('Vingadores', 2018, 160)
-s1 = Serie('Atlanta', 2005, 5)
 
-print(f'{f1.nome}. Likes: {f1._likes}')
-f1.likes
-print(f'{f1.nome}. Likes: {f1._likes}')
-
-s1.likes
-s1.likes
-print(f'{s1.nome}. Likes: {s1._likes}')
-
-#%% Criando lista e print de atributos
-filmes_e_series = [f1, s1]
-for programa in filmes_e_series:
-    # verificar se tem atibuto duracao ou temporadas (hasattr)
-    detalhes = programa.duracao if hasattr(programa, 'duracao') else programa.temporadas # ternario 
-    print(f'{programa.nome} - {detalhes} D - {programa._likes}')
-
-#%% Criando lista e print de um novo jeito
-filmes_e_series = [f1, s1]
-for programa in filmes_e_series:
-    print(programa) # polimorfismo
-
-#%% Mais filmes e criando uma playlist
+#%% Criando filmes e playlist
 f1 = Filme('Vingadores', 2018, 160)
 f2 = Filme('João e Maria', 2015, 100)
 s1 = Serie('Atlanta', 2005, 5)
@@ -74,6 +49,11 @@ s2 = Serie('Breaking Bad', 2013, 5)
 lista_programas = [f1, f2, s1, s2]
 
 p1 = Playlist('Playlist do André', lista_programas)
-print(f'Programas: {p1.tamanho()}')
-for p in p1.programas:
+print(f'Programas: {len(p1)}') # p1 tem atributos de list, por isso len funciona
+for p in p1:
     print(p)
+
+#%% Verificando sem tem objeto dentro de uma lista
+print(f'f1 tá em playlist? {f1 in p1}')
+f3 = Filme('Spiderman', 2019, 230)
+print(f'f3 tá em playlist? {f3 in p1}')
