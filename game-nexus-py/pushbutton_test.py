@@ -7,7 +7,7 @@ import pyautogui # comandos no pc
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(10, GPIO.IN, pull_up_down = GPIO.PUD_DOWN) # pino 10 -> dino pula
-#GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN) # pino 11 -> reset
+GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN) # pino 11 -> reset
 
 # pular
 def jump_callback(channel): 
