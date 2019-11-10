@@ -25,7 +25,7 @@ def quit_callback(channel):
     return 1
 
 GPIO.add_event_detect(10, GPIO.RISING, callback = jump_callback) # Setup event on pin 10 rising edge
-GPIO.add_event_detect(11, GPIO.RISING, callback = quit_callback) # Setup event on pin 10 rising edge
+GPIO.add_event_detect(11, GPIO.RISING, callback = quit_callback) # Setup event on pin 11 rising edge
 message = input("Press enter to quit\n\n") # Run until someone presses enter
 GPIO.cleanup() # Clean up
 
