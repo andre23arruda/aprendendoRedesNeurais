@@ -1,5 +1,5 @@
 # learning-python
-Aprendendo redes neurais em Python com cursos da Alura
+Aprendendo Python com cursos da Alura
 
 ## Aprendendo:
 
