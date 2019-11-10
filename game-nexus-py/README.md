@@ -13,5 +13,6 @@ Para rodar o script pushbutton.py :
 
     sudo apt-get install python-rpi.gpio python3-rpi.gpio
 
+<a href="https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/"><img src="raspberry_pushbutton.jpg" title="raspberry_pushbutton" alt="FVCproductions"></a>
 
 <!-- [![raspberry_pushbutton](raspberry_pushbutton.jpg](https://raspberrypihq.com/use-a-push-button-with-raspberry-pi-gpio/) -->
