@@ -42,11 +42,11 @@ No meu caso, uso o anaconda. Então tenho como resultado:
     cd C:\Users\alca0\Anaconda3\Scripts
 
 
-# Copiar o ui feito salvo pelo qtdesigner e converter para .py
+# Copiar o .ui pelo qtdesigner e converter para .py
 
     pyuic5 -x "C:\Users\alca0\Documents\Python Scripts\teste.ui" -o C:\Users\alca0\Documents\Python Scripts\teste.py"
 
 
-# executar teste.py no vscode e ser feliz
+# Abrir teste.py no vscode e ser feliz
 
-    Use o meu comoo exemplo, pois já adicionei uma função
+    Use o meu como exemplo, pois já adicionei uma função
