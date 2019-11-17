@@ -41,6 +41,13 @@ No meu caso, uso o anaconda. Então tenho como resultado:
 
     cd C:\Users\alca0\Anaconda3\Scripts
 
+Dentro da pasta Scripts deve conter um arquivo chamado:
+    
+    pyui5.exe
+    
+Ele é o responsável em converter o .ui do qtdesigner em .py
+
+Então sempre que modificarmos alguma coisa no designer, teremos que usar o comando abaixo
 
 # Copiar o .ui pelo qtdesigner e converter para .py
 
