@@ -25,8 +25,10 @@ def start_callback(channel):
     print("Começa o jogo")
     return 1
 
-GPIO.add_event_detect(PIN_JUMP, GPIO.RISING, callback = jump_callback) # Setup event on pin 10 rising edge
-GPIO.add_event_detect(PIN_START, GPIO.RISING, callback = start_callback) # Setup event on pin 10 rising edge
+GPIO.add_event_detect(PIN_JUMP, GPIO.RISING, callback = jump_callback) # Setup event on PIN_JUMP rising edge
+GPIO.add_event_detect(PIN_START, GPIO.RISING, callback = start_callback) # Setup event on PIN_START rising edge
 
-message = input("Press enter to quit\n\n") # Run until someone presses enter
+while True:
+    pass
+
 GPIO.cleanup() # Clean up
