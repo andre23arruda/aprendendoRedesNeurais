@@ -1,4 +1,4 @@
-# Intruções para rodar o script pushbutton.py
+# Instruções para rodar o script pushbutton.py
 
 - Instalar:
 
